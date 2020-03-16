@@ -61,11 +61,18 @@ int main(int argc, char** args) { 	// đoạn này là thêm các argument để
 	A.assign(N, 0);
 	for (int i = 0; i < N; i++) A[i] = rand() % K;
 	
-	string output_file = "day1.in";
-	
+	/*uncomment below line for  bài 1, 2, 3 */
+	//string output_file = "day1.in";
+	/*uncomment below line for  bài 4*/
+	string output_file = "search1.in";
 	// Mo file day1.in de ghi ket qua
 	ofstream fout(output_file.c_str());
-	fout << N << endl;
+	fout << N;
+	/* bai 4*/
+	fout << " " << A[rand() % N];
+	/********/ 
+	fout << endl;
+
 	for (int i = 0; i < N; i++) 
 		if (i < N-1) {
 			fout << A[i] << " ";
