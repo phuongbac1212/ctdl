@@ -54,7 +54,7 @@ int main() {
 	clock_t thoigian_chayxong = clock();
 	// CLOCKS_PER_SEC la thoi gian doi tu` dong ho cua chip sang giay
 	double thoigian_chay = double(thoigian_chayxong - thoigian_batdau) / CLOCKS_PER_SEC;		
-	cout << "Thoi gian chay: " << thoigian_chay << endl;
+	cout << "Thoi gian chay[bai2.cpp]: " << thoigian_chay << endl << endl;
 	 	
 	return 0;
 }
